@@ -1,140 +1,337 @@
-<DOCTYPE html>
-<html>
+@charset "UTF-8";
+
+/* My Custom CSS*/
 
 <head>
-    <meta charset="utf-8>
-    <meta name="viewport content="width-device-width, initial-scale-1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lustria&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
-    
-    <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
-    <!-- End WOWSlider.com HEAD section -->
-    
+<style>
+  body {
+  font-family: "Outfit", sans-serif;
+      
+}
+</style>
 </head>
 
-<body>
+* {
+  box-sizing: border-box;
+}
 
-<header>  
-<div class="shopping cart">
-    <a href="shoppingcart.html">
-    <img src="Images/shopping%20cart%20logo.png" alt="shopping cart logo" style="float: right" width="100px" height="100px">
-    </a>
-</div>
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
-<div class="navigation">
-   <img class="logo-img" src="Images/pastadesso%20logo.png" alt="pastadesso logo" width="400px" height="400px"> 
-            <ul id="nav-list">
-                <li> <a href="index.html"> HOME </a> </li>
-                <li> <a href="menu.html"> MENU </a> </li>
-                <li> <a href="gallery.html"> GALLERY </a> </li>
-                <li> <a href="products.html"> PRODUCTS </a> </li>
-                <li> <a href="contact.html"> CONTACT </a> </li>
-                <li> <a href="orderonline.html"> ORDER </a> </li>
-            </ul>
-</div> 
-<h1><i>Experience Pasta Like Never Before</i></h1>
-</header> 
-
-<!-- Start WOWSlider.com BODY section -->
-    <div id="wowslider-container1">
-    <div class="ws_images">
-    <ul>
-		<li><img src="data1/images/slider_photo_1.jpg" alt="Our Handmade Pasta" title="Our Handmade Pasta" id="wows1_0"/></li>
-		<li><a href="http://wowslider.net"><img src="data1/images/slider_photo_2.jpg" alt="jquery image slider" title="Sauces" id="wows1_1"/></a></li>
-		<li><img src="data1/images/slider_photo_3.jpg" alt="Dishes to your delight!" title="Dishes to your delight!" id="wows1_2"/></li>
-	</ul>
-	</div>
-	<div class="ws_bullets">
-	<div>
-		<a href="#" title="Our Handmade Pasta"><span><img src="data1/tooltips/slider_photo_1.jpg" alt="Our Handmade Pasta"/>1</span></a>
-		<a href="#" title="Sauces"><span><img src="data1/tooltips/slider_photo_2.jpg" alt="Sauces"/>2</span></a>
-		<a href="#" title="Dishes to your delight!"><span><img src="data1/tooltips/slider_photo_3.jpg" alt="Dishes to your delight!"/>3</span></a>
-	</div>
-	</div>
-	<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel slider</a> by WOWSlider.com v9.0
-	</div>
-    <div class="ws_shadow"></div>
-    </div>	
-    <script type="text/javascript" src="engine1/wowslider.js"></script>
-    <script type="text/javascript" src="engine1/script.js"></script>
-    <!-- End WOWSlider.com BODY section -->
-
-<main>
-  
-    <h2><b>ABOUT US</b></h2>
-         
-    <p>Welcome to PastAdesso! We're proud to be one of Vegas' well-known businesses for quality-made pasta. Our specialties include organic pasta, sauces &amp; products inspired by the various regions of Italy &amp; beyond.</p>
+body {
     
-    <div class="header">
-    <h2><b>OUR MENU</b></h2>
-    </div>
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+}
 
-    <div class="flex-container">
-        <div class="title"><h3>BRONZE-CUT PASTA</h3></div>
-        <div class="left-item" style="background-color:#B8000C;"> <img src="Images/bronze-cut%20pasta%20menu.jpg" width="200px" height="200px"> </div>
-        
-        <div class="title"><h3>RAVIOLI</h3></div>
-        <div class="middle-item" style="background-color:#B8000C;"> <img src="Images/ravioli%20menu.jpg" width="200px" height="200px"> </div>  
-        
-        <div class="title"><h3>SAUCES</h3></div>
-        <div class="right-item" style="background-color:#B8000C;"> <img src="Images/sauces%20menu.jpg" width="200px" height="200px"> </div>
-        
-        <div class="title"><h3>LASAGNA</h3></div> 
-        <div class="left-item" style="background-color:#B8000C;"> <img src="Images/lasagna%20menu.jpg" width="200px" height="200px"> </div>
-        
-        <div class="title"><h3>PASTA AL FORNO</h3></div> 
-        <div class="middle-item" style="background-color:#B8000C;"> <img src="Images/pasta%20al%20forno%20menu.jpg" width="200px" height="200px"> </div> 
-        
-        <div class="title"><h3>TIRAMISU</h3></div> 
-        <div class="right-item" style="background-color:#B8000C;"> <img src="Images/tiramisu%20menu.jpg" width="200px" height="200px"> </div>
-    </div>
-            
-</main>
-   
-<article>
-    <h2><b>ORDER NOW</b></h2>
-    <p>If you wish to order our products, click on the link below to order online.</p>
-    <img src="Images/pastadesso%20order.jpg" alt="spaghetti alla bolognese" width="200px" height="200px"> 
+body img {
     
-<div class="grid-container">
-    <div class="header">
-    <h2><b>Popular Recipes Today</b></h2>
-    <p>Use our handmade pasta to create popular Italian cuisines to your delight!</p>
-    </div>
-  
-    <div class="left" style="background-color:#F2F2F2;">Spaghetti Alla Bolognese <img src="Images/Spaghetti%20Alla%20Bolognese.jpg" alt="spaghetti alla bolognese" width="200px" height="200px"> </div>
-    <div class="middle" style="background-color:#F2F2F2;">Pasta Ai Quattro Formaggi <img src="Images/Pasta%20Ai%20Quattro%20Formaggi.jpg" alt="pasta ai quattro formaggi" width="200px" height="200px"> </div>  
-    <div class="right" style="background-color:#F2F2F2;">Spaghetti Pomodoro al Parmigiano <img src="Images/Spaghetti%20Pomodoro%20al%20Parmigiano.jpg" alt="spaghetti pomodoro al parmigiano" width="200px" height="200px"> </div>
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-</div> 
-</article>
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-<article>     
-    <h2><b>Love Our Products?</b></h2>
-    <p>If you are interested in our work and would like to learn more, please contact us by email or check out our social media.</p>
-</article>
+/* Grid Layout */
 
-<footer>
-    <div class="grid-container">
-    <img src="Images/instagram%20logo.png" alt="instagram logo" style="width:20%">
-   
-    <img src="Images/facebook%20logo.png" alt="facebook logo" style="width:20%">
-   
-    <img src="Images/tik%20tok%20logo.png" alt="tiktok logo" style="width:20%">
-   
-    <img src="Images/yelp%20logo.png" alt="yelp logo" style="width:20%">
-    </div>
-          
-    <p> COPYRIGHT &copy; EST. 2021 PASTADESSO I CREATED BY MAKAYLA SPROSKY </p>       
-           
-</footer>
+/* Style the slider */
 
-</body>
+body #wowslider-container1 {
+    width: 85%;
+    height: 85%;
+    padding-top: 150px;
+}
 
-</html>
+/* header navigation */
+body header .navigation{
+    width: 100%;
+    text-align: center;
+    background-color: #B8000C;
+    vertical-align: bottom;
+    line-height:120px;
+    height:120px;
+    padding-top: 5px;
+}
+
+body header #nav-list {
+   list-style-type: none;
+}
+
+body header #nav-list li {
+   display: inline-block;
+   font-size: 18px;
+   margin: 20px;
+   display: inline-block;
+   vertical-align: bottom;
+   line-height: normal;     
+}
+body header .logo-img {
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    z-index: 100;
+    margin: 0px 15px 15px 0px;
+}
+
+body header .shopping cart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  grid-column-gap: 15px;
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 250px;
+  width: auto;
+  text-align: left;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+/* flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+    text-align: end;
+}
+
+/* link style */
+
+a:link, a:visited {
+    
+    color: #FFFFFF;
+}
+
+a:focus, a:hover, a:active {
+    
+    color: #FFFFFF;
+}
+
+/* header styles */
+
+
+h1 {
+    
+    margin-top: 0.2px;
+    font-size: 2.2em;
+    
+}
+
+/* nav styles */
+
+nav, footer {
+    
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+    
+}
+
+nav ul li a:link, nav ul li a:visited {
+    
+    color: #FFFFFF;
+    
+}
+
+
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    
+    color: #FFFFFF;
+    
+}
+
+nav ul {
+    
+    padding: 10px;
+    margin: 0;
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-indent: 50px;
+    
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+/* button group */
+
+.btn-group button {
+  background-color: #B8000C;
+  padding: 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* main styles */
+
+main {
+    
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+    color: #fff;
+    padding: 10px;
+    margin: 2.5%;
+    display:table;
+}
+
+/* section styles */
+
+section {
+    
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+    color: #fff;
+    padding: 10px;
+    margin: 2.5%;
+    display:table;
+}
+
+/* img float */
+
+article img {
+    
+    float: center;
+    margin: 0 20px 20px 0;
+}
+
+main img {
+    
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+
+/* image placement */
+
+.img-container {
+  float: left;
+  align-items: center;
+  width: 20%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* article style */
+
+article {
+    
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+    padding: 10px;
+    padding-left: 15px;
+    margin: 2.5%
+    
+}
+
+/* Flexbox */
+
+.images {
+    
+    display: block;
+    margin: auto;
+    float: center;
+}
+
+/* footer styles */
+
+footer {
+    
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px; 
+    
+}
+
+footer, .grid container {
+  width: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF 
+}
+
+h2 {
+    
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF
+    
+}
+
+h3 {
+    
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF
+}
+
+p {
+    
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF
+    
+}
+    
