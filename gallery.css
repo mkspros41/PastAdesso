@@ -42,14 +42,6 @@ footer img {
 
 /* Grid Layout */
 
-/* Style the slider */
-
-body #wowslider-container1 {
-    width: 85%;
-    height: 85%;
-    padding-top: 150px;
-}
-
 /* header navigation */
 body header .navigation{
     width: 100%;
@@ -94,7 +86,7 @@ body header .shopping cart {
     'header header header header header header' 
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
@@ -214,7 +206,8 @@ nav ul li a {
 
 .btn-group button {
   border: none;
-  border-radius: 1px; 
+  border-radius: 5px;
+  border-spacing: 1px;
   background-color: #B8000C;
   padding-bottom: 30px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
@@ -228,51 +221,9 @@ main {
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
     color: #fff;
-    padding: 10px;
+    padding: 50px;
     margin: 2.5%;
     display:table;
-}
-
-/* section styles */
-
-section {
-    
-    font-family: "Outfit", sans-serif;
-    background-color: #B8000C;
-    color: #fff;
-    padding: 10px;
-    margin: 2.5%;
-    display:table;
-}
-
-/* img float */
-
-article img {
-    
-    float: center;
-    margin: 0 20px 20px 0;
-}
-
-main img {
-    
-    float: left;
-    text-align: center;
-    margin: 10px;
-}
-
-/* image placement */
-
-.img-container {
-  float: left;
-  align-items: center;
-  width: 20%;
-  padding: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* article style */
@@ -281,19 +232,10 @@ article {
     
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
-    padding: 5px;
+    padding: 10px;
     padding-left: 15px;
-    margin: 2.5%
-    
-}
-
-/* Flexbox */
-
-.images {
-    
-    display: block;
-    margin: auto;
-    float: center;
+    margin: 2.5%;
+    border-spacing: 10px;
 }
 
 /* footer styles */
@@ -303,8 +245,8 @@ footer {
     color: #FFFFFF;
     text-align: center;
     font-size: 12px;
-    padding: 50px;
-    padding-top: 10px;
+    padding: 5px; 
+    
 }
 
 footer, .grid container {
@@ -336,4 +278,3 @@ p {
     color: #FFFFFF
     
 }
-    

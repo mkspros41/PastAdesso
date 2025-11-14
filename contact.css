@@ -42,14 +42,6 @@ footer img {
 
 /* Grid Layout */
 
-/* Style the slider */
-
-body #wowslider-container1 {
-    width: 85%;
-    height: 85%;
-    padding-top: 150px;
-}
-
 /* header navigation */
 body header .navigation{
     width: 100%;
@@ -85,66 +77,6 @@ body header .shopping cart {
     position: absolute;
     right: 10px;
     top: 10px;
-}
-
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left left middle middle right right' 
-    'footer footer footer footer footer footer';
-  grid-column-gap: 15px;
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-  height: 250px;
-  width: auto;
-  text-align: left;
-    /* Should be removed. Only for demonstration */
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 500px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
-}
-
-/* flex container */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.title {
-    text-align: end;
 }
 
 /* link style */
@@ -214,7 +146,8 @@ nav ul li a {
 
 .btn-group button {
   border: none;
-  border-radius: 1px; 
+  border-radius: 5px;
+  border-spacing: 1px;
   background-color: #B8000C;
   padding-bottom: 30px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
@@ -228,51 +161,9 @@ main {
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
     color: #fff;
-    padding: 10px;
+    padding: 50px;
     margin: 2.5%;
     display:table;
-}
-
-/* section styles */
-
-section {
-    
-    font-family: "Outfit", sans-serif;
-    background-color: #B8000C;
-    color: #fff;
-    padding: 10px;
-    margin: 2.5%;
-    display:table;
-}
-
-/* img float */
-
-article img {
-    
-    float: center;
-    margin: 0 20px 20px 0;
-}
-
-main img {
-    
-    float: left;
-    text-align: center;
-    margin: 10px;
-}
-
-/* image placement */
-
-.img-container {
-  float: left;
-  align-items: center;
-  width: 20%;
-  padding: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* article style */
@@ -281,19 +172,30 @@ article {
     
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
-    padding: 5px;
+    padding: 10px;
     padding-left: 15px;
-    margin: 2.5%
-    
+    margin: 2.5%;
+    border-spacing: 10px;
 }
 
-/* Flexbox */
+/* form style */
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
 
-.images {
-    
-    display: block;
-    margin: auto;
-    float: center;
+input[type=button], input[type=submit] {
+  font-family: "Outfit", sans-serif;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /* footer styles */
@@ -303,8 +205,8 @@ footer {
     color: #FFFFFF;
     text-align: center;
     font-size: 12px;
-    padding: 50px;
-    padding-top: 10px;
+    padding: 5px; 
+    
 }
 
 footer, .grid container {
@@ -336,4 +238,3 @@ p {
     color: #FFFFFF
     
 }
-    

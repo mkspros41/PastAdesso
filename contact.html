@@ -8,75 +8,89 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lustria&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
     
-    <nav>
-            
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
+</head>
+
+<body>
+
+<header>  
+<div class="shopping cart">
+    <a href="shoppingcart.html">
+    <img src="Images/shopping%20cart%20logo.png" alt="shopping cart logo" style="float: right" width="100px" height="100px">
+    </a>
+</div>
+
+<div class="navigation">
+   <img class="logo-img" src="Images/pastadesso%20logo.png" alt="pastadesso logo" width="400px" height="400px"> 
+            <ul id="nav-list">
+                <li> <a href="index.html"> HOME </a> </li>
                 <li> <a href="menu.html"> MENU </a> </li>
                 <li> <a href="gallery.html"> GALLERY </a> </li>
                 <li> <a href="products.html"> PRODUCTS </a> </li>
                 <li> <a href="contact.html"> CONTACT </a> </li>
                 <li> <a href="orderonline.html"> ORDER </a> </li>
-                <li> <a href="shoppingcart.html"> PRODUCTS </a> </li>
-               
             </ul>
-        
-    </nav>
+</div> 
+<h1><i>Experience Pasta Like Never Before</i></h1>
+</header> 
+
+<main>
+  
+    <div class="contact">
+    <h2><b>CONTACT</b></h2>
+    </div>
+
+<form>
+  <label for="fname">Name</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="lname">Phone</label><br>
+  <input type="text" id="phone" name="phone">
+  <label for="fname">Email</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="lname">Message</label><br>
+  <input type="text" id="message" name="message">
+  <input type="submit" value="Submit">
+</form>
+            
+</main>
+   
+
+<article>     
+    <h2><b>PHONE</b></h2>
+    <h3>(702) 576-5089</h3>
     
-    <body>
-     <div class="container-fluid">
-     <h1 style="color:#FFFFFF;">PastAdesso</h1>
-       
-        <h2 style="color: #FFFFFF;">ABOUT US</h2>
-        
-        <p style="color: #FFFFFF;">Welcome to PastAdesso! We're proud to be one of Vegas' well-known businesses for quality-made pasta. Our specialties include organic pasta, sauces &amp; products inspired by the various regions of Italy &amp; beyond.</p>
-        
-        <h2 style="color:#FFFFFF;">MENU</h2>
-        
-        <div class="row">
-            <div class="col" style="background-color: #A81E1C"></div>
-        </div>
-        
-        <div class="row">
-            <div class="col" style="background-color: #F71616"></div>
-            <div class="col" style="background-color: #F71616"></div>
-            <div class="col" style="background-color: #F71616"></div>
-        </div>
-        
-        <div class="d-flex bg-light" style="height: 150px"> 
-            <div class="p-2 border">Bronze-Cut Pasta</div>
-            <div class="p-2 border">Ravioli</div>
-            <div class="p-2 border">Sauces</div>
-            <div class="p-2 border">Lasagna</div>
-            <div class="p-2 border">Pasta Al Forno</div>
-            <div class="p-2 border">Tiramisu</div>
-        </div>
-        
-        <h2 style="color:#FFFFFF;">ORDER NOW</h2>
-        <p style="color: #FFFFFF;">If you wish to order our products, click on the link below to order online.</p>
-        
-        <h2 style="color:#FFFFFF;">Popular Recipes Today</h2>
-        <p style="color: #FFFFFF;">Use our handmade pasta to create popular Italian cuisines to your delight!</p>
-        
-        <div class="d-flex bg-light" style="height: 150px"> 
-            <div class="p-2 border">Spaghetti Alla Bolognese</div>
-            <div class="p-2 border">Pasta Ai Quattro Formaggi</div>
-            <div class="p-2 border">Spaghetti Pomodoro al Parmigiano</div>
-        </div>
-        
-        <h2 style="color:#FFFFFF;">Love Our Products?</h2>
-        <p style="color: #FFFFFF;">If you are interested in our work and would like to learn more, please contact us by email or check out our social media.</p>
-     
-         </div>
+    <h2><b>EMAIL</b></h2>
+    <h3>PASTADESSO1@GMAIL.COM</h3>
     
-        </body>
+    <h2><b>LOCATION</b></h2>
+    <h3>2987 Las Vegas Blvd N Las Vegas, NV 89030</h3>
     
-    </head>
+    <h2><b>BUSINESS HOURS</b></h2>
+    <h3>MONDAYCLOSED<br>TUESDAY<br>WEDNESDAY</h3>
     
-    <footer>
-        <p style="color: #FFFFFF;">COPYRIGHT </p> <hr> <p style="color: #FFFFFF;">EST. 2021 PASTADESSO</p> <hr> <p style="color: #FFFFFF;">CREATED BY MAKAYLA SPROSKY</p>
-    </footer>
-    
+</article>
+
+<footer>
+    <div class="btn-group">
+    <button> <a href="https://www.instagram.com/pastadesso/">
+    <img src="Images/instagram%20logo.png" alt="instagram logo" style="width:20%"></a></button>
+   
+    <button> <a href="https://www.facebook.com/PastAdesso/">
+    <img src="Images/facebook%20logo.png" alt="facebook logo" style="width:20%"> </a> </button>
+   
+    <button> <a href="https://www.facebook.com/PastAdesso/">
+    <img src="Images/tik%20tok%20logo.png" alt="tiktok logo" style="width:20%"> </a> </button>
+   
+    <button> <a href="https://www.yelp.com/biz/pastadesso-las-vegas">
+    <img src="Images/yelp%20logo.png" alt="yelp logo" style="width:20%"> </a> </button>
+    </div>
+          
+    <p> COPYRIGHT &copy; EST. 2021 PASTADESSO I CREATED BY MAKAYLA SPROSKY </p>       
+           
+</footer>
+
+</body>
+
 </html>
