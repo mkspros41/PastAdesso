@@ -204,12 +204,12 @@ footer {
     
     color: #FFFFFF;
     text-align: center;
-    font-size: 12px;
-    padding: 5px; 
-    
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 10px;
 }
 
-footer, .grid container {
+footer {
   width: auto;
 }
 

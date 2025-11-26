@@ -42,6 +42,14 @@ footer img {
 
 /* Grid Layout */
 
+/* Style the slider */
+
+body #wowslider-container1 {
+    width: 85%;
+    height: 85%;
+    padding-top: 150px;
+}
+
 /* header navigation */
 body header .navigation{
     width: 100%;
@@ -79,7 +87,7 @@ body header .shopping cart {
     top: 10px;
 }
 
-/* Image Gallery */
+/* image gallery */
 div.gallery {
   display: flex;
   flex-wrap: wrap;
@@ -100,16 +108,95 @@ div.gallery-item img {
   height: auto;
 }
 
-/* flex container */
-.flex-container {
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  div.gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.gallery {
+    width: 100%;
+  }
+}
+
+/* recipe gallery */
+div.recipe {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.title {
-    text-align: end;
+div.recipe-item {
+  margin: 5px;
+  background-color: #fff;
+  border-width: 10px;
+  border-radius: 30px;
+  height: 400px;
+  padding: 0 50px;
+  width: 25%;
+}
+
+div.recipe-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.recipe-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  div.recipe {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.recipe {
+    width: 100%;
+  }
+}
+
+/* recipe gallery button */
+.button {
+  background-color: #B8000C;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type=button], input[type=submit] {
+  font-family: "Outfit", sans-serif;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /* link style */
@@ -132,6 +219,10 @@ h1 {
     margin-top: 0.2px;
     font-size: 2.2em;
     
+}
+
+div.header {
+    margin: 2.5%
 }
 
 /* nav styles */
@@ -175,18 +266,6 @@ nav ul li a {
     
 }
 
-/* button group */
-
-.btn-group button {
-  border: none;
-  border-radius: 5px;
-  border-spacing: 1px;
-  background-color: #B8000C;
-  padding-bottom: 30px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
-}
-
 /* main styles */
 
 main {
@@ -194,9 +273,61 @@ main {
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
     color: #fff;
-    padding: 50px;
+    padding: 10px;
     margin: 2.5%;
     display:table;
+}
+
+/* section styles */
+
+section {
+    
+    font-family: "Outfit", sans-serif;
+    background-color: #B8000C;
+    color: #fff;
+    padding: 10px;
+    margin: 2.5%;
+    display: table;
+    align-items: center;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+section img {
+    place-items: right;
+    margin: 0 20px 20px 0;
+    width: 25%;
+    height: 50%; 
+}
+
+/* img float */
+
+article img {
+    
+    float: center;
+    margin: 0 20px 20px 0;
+}
+
+main img {
+    
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+
+/* image placement */
+
+.img-container {
+  float: left;
+  align-items: center;
+  width: 20%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* article style */
@@ -205,10 +336,19 @@ article {
     
     font-family: "Outfit", sans-serif;
     background-color: #B8000C;
-    padding: 10px;
+    padding: 5px;
     padding-left: 15px;
-    margin: 2.5%;
-    border-spacing: 10px;
+    margin: 2.5%
+    
+}
+
+/* Flexbox */
+
+.images {
+    
+    display: block;
+    margin: auto;
+    float: center;
 }
 
 /* footer styles */
@@ -226,6 +366,20 @@ footer {
   width: auto;
 }
 
+/* footer button group */
+
+.btn-group, button {
+  border: none;
+  border-radius: 1px; 
+  background-color: #B8000C;
+  padding: 10px;
+  padding-bottom: 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* font styles */
+
 h1 {
     text-align: center;
     font-family: "Outfit", sans-serif;
@@ -233,21 +387,22 @@ h1 {
 }
 
 h2 {
-    
     font-family: "Outfit", sans-serif;
     color: #FFFFFF
-    
 }
 
 h3 {
-    
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF
+}
+
+h4 {
     font-family: "Outfit", sans-serif;
     color: #FFFFFF
 }
 
 p {
-    
     font-family: "Outfit", sans-serif;
     color: #FFFFFF
-    
 }
