@@ -79,6 +79,24 @@ body header .shopping cart {
     top: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  body header .logo-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body #nav-list li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body h1 {
+    display: none;
+  }
+}
+
 /* Image Gallery */
 div.gallery {
   display: flex;
@@ -98,6 +116,20 @@ div.gallery-item {
 div.gallery-item img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  div.gallery {
+    max-width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.gallery, div.gallery-item, div.gallery-item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* flex container */
@@ -177,10 +209,9 @@ nav ul li a {
 
 /* button group */
 
-.btn-group button {
+.btn-group, button {
   border: none;
-  border-radius: 5px;
-  border-spacing: 1px;
+  border-radius: 50%;
   background-color: #B8000C;
   padding-bottom: 30px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */

@@ -87,14 +87,32 @@ body header .shopping cart {
     top: 10px;
 }
 
-/* image gallery */
-div.gallery {
+@media only screen and (max-width: 600px) {
+  body header .logo-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body #nav-list li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body h1 {
+    display: none;
+  }
+}
+
+/* product image gallery */
+div.gallery-product {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-div.gallery-item {
+div.product-item {
   margin: 5px;
   border: 1px solid #B8000C;
   border-width: auto;
@@ -103,12 +121,12 @@ div.gallery-item {
   width: 24.99999%;
 }
 
-div.gallery-item img {
+div.product-item img {
   width: 100%;
   height: auto;
 }
 
-div.gallery-item div.desc {
+div.product-item div.desc {
   padding: 15px;
   text-align: center;
 }
@@ -163,14 +181,15 @@ div.recipe-item div.desc {
 
 @media only screen and (max-width: 700px) {
   div.recipe {
-    width: 49.99999%;
+    max-width: 100%;
     margin: 6px 0;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  div.recipe {
+@media only screen and (max-width: 600px) {
+  div.recipe, div.recipe-item, div.recipe-item img, div.recipe-item div.desc {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -370,7 +389,7 @@ footer {
 
 .btn-group, button {
   border: none;
-  border-radius: 1px; 
+  border-radius: 50%;
   background-color: #B8000C;
   padding: 10px;
   padding-bottom: 30px; /* Some padding */

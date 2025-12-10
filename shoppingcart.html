@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lustria&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="shoppingcart.css">
  
 </head>
 
@@ -36,87 +36,98 @@
 </header> 
 
 <main>
-  
-    <div class="header">
-    <h2><b>YOUR SHOPPING CART</b></h2>
-    </div>
-    
-<div class="gallery">
+<div class="row">
  
-  <div class="gallery-item">
-    <img src="Images/bronze-cut%20pasta%20menu.jpg" alt="Bronze Cut Pasta">
-    <div class="desc">BRONZE-CUT PASTA</div>
-  </div>
+<div class="col-75">
+   
+<div class="container">
+    <form>
+        <div class="row">
+         
+        <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Email Adresss">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Street Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="City">
 
-  <div class="gallery-item">
-    <img src="Images/ravioli%20menu.jpg" alt="Ravioli">
-    <div class="desc">RAVIOLI</div>
-  </div>
+        <div class="row">
+             
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State">
+              </div>
+              
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="Zip Code">
+              </div>
+              
+        </div>
+            
+        </div>
 
-  <div class="gallery-item">
-    <img src="Images/sauces%20menu.jpg" alt="Sauces">
-    <div class="desc">SAUCES</div>
-  </div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Card Name">
+            <label for="ccnum">Credit Card Number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Card Number">
+            <label for="expmonth">Exp. Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Month of Expiration">
 
-  <div class="gallery-item">
-    <img src="Images/lasagna%20menu.jpg" alt="Lasagna">
-    <div class="desc">LASAGNA</div>
-  </div>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp. Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Year of Expiration">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV">
+              </div>
+            </div>
+          </div>
 
-  <div class="gallery-item">
-    <img src="Images/pasta%20al%20forno%20menu.jpg" alt="Pasta Al Forno">
-    <div class="desc">PASTA AL FORNO</div>
-  </div>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+</div>
 
-  <div class="gallery-item">
-    <img src="Images/tiramisu%20menu.jpg" alt="Tiramisu">
-    <div class="desc">TIRAMISU</div>
-  </div>
+<div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>0</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$0</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$0</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$0</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$0</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$0</b></span></p>
+    </div>
+</div>
 
 </div>
             
 </main>
-   
-<article>
-  
-<section>
-    <h2><b>ORDER NOW</b></h2>
-    <p>If you wish to order our products, click on the link below to order online.</p>
-    <img src="Images/pastadesso%20order.jpg" alt="spaghetti alla bolognese" width="200px" height="200px">
-</section> 
-
-<div class="header">
-    <h2><b>Popular Recipes Today</b></h2>
-    <p>Use our handmade pasta to create popular Italian cuisines to your delight!</p>
-</div>
-    
-<div class="recipe">
-    <div class="recipe-item">
-    <img src="Images/Spaghetti%20Alla%20Bolognese.jpg" alt="Spaghetti Alla Bolognese" style="padding-top: 20px">
-    <div class="desc">Spaghetti Alla Bolognese</div>
-    <div class="button"> <a href="https://www.google.com/search?q=spaghetti+alla+bolognese+recipe&sca_esv=e89fdb09d302f80a&ei=BTYdafS5H_zIkPIP0vzZkQg&oq=Spaghetti+Alla+Bolognese&gs_lp=Egxnd3Mtd2l6LXNlcnAiGFNwYWdoZXR0aSBBbGxhIEJvbG9nbmVzZSoCCAAyCxAAGIAEGJECGIoFMgUQABiABDIGEAAYBxgeMgsQABiABBiRAhiKBTIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABEjSDVAAWABwAHgAkAEAmAFKoAFKqgEBMbgBAcgBAPgBAZgCAaACVJgDAJIHATGgB-cGsgcBMbgHVMIHAzItMcgHBw&sclient=gws-wiz-serp">SEE RECIPE</a></div>
-  </div>
-
-  <div class="recipe-item">
-    <img src="Images/Pasta%20Ai%20Quattro%20Formaggi.jpg" alt="Pasta Ai Quattro Formaggi">
-    <div class="desc">Pasta Ai Quattro Formaggi</div>
-    <div class="button"> <a href="https://www.google.com/search?q=pasta+ai+quattro+formaggi+recipe&sca_esv=e89fdb09d302f80a&ei=IjYdae3IKYr1kPIP64nh8Qs&oq=Pasta+Ai+Quattro+Formaggi+recipe&gs_lp=Egxnd3Mtd2l6LXNlcnAiIFBhc3RhIEFpIFF1YXR0cm8gRm9ybWFnZ2kgcmVjaXBlKgIIADIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogQyCBAAGIAEGKIEMgUQABjvBUjvKFCtEVitEXACeAGQAQCYAUugAUuqAQExuAEByAEA-AEC-AEBmAIDoAJfwgIKEAAYsAMY1gQYR5gDAIgGAZAGCJIHATOgB80FsgcBMbgHUcIHAzItM8gHDg&sclient=gws-wiz-serp">SEE RECIPE</a></div>
-  </div>
-
-  <div class="recipe-item">
-    <img src="Images/Spaghetti%20Pomodoro%20al%20Parmigiano.jpg" alt="Spaghetti Pomodoro al Parmigiano">
-    <div class="desc">Spaghetti Pomodoro al Parmigiano</div>
-    <div class="button"><a href="https://www.google.com/search?q=spaghetti+pomodoro+al+parmigiano+recipe&sca_esv=e89fdb09d302f80a&ei=cjYdaYHFCpXTkPIPnIXo2AU&ved=0ahUKEwiBxp6AoP2QAxWVKUQIHZwCGlsQ4dUDCBE&uact=5&oq=spaghetti+pomodoro+al+parmigiano+recipe&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ3NwYWdoZXR0aSBwb21vZG9ybyBhbCBwYXJtaWdpYW5vIHJlY2lwZTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIkk9QxARYq0pwAXgBkAEAmAHnAaABxQaqAQU5LjAuMbgBA8gBAPgBAvgBAZgCC6AC8gbCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcFOS4xLjGgB4IjsgcFOC4xLjG4B-oGwgcFMC45LjLIBx0&sclient=gws-wiz-serp">SEE RECIPE</a></div>
-  </div>
-
-</div> 
-
-</article>
-
-<section>     
-    <h2><b>Love Our Products?</b></h2>
-    <p>If you are interested in our work and would like to learn more, please contact us by email or check out our social media.</p>
-</section>
 
 <footer>
     <div class="btn-group">
